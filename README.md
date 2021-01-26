@@ -1,0 +1,1 @@
+- springcloud 应用运行在 k8s 环境中，k8s 注册中心
