@@ -1,0 +1,4 @@
+rootProject.name = 'springcloud-k8s'
+include 'service-provider'
+include 'service-consumer'
+
