@@ -4,6 +4,7 @@ import com.model.Order;
 import com.repository.OrderRepository;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.cloud.client.ServiceInstance;
@@ -23,9 +24,8 @@ import java.util.List;
 @Api("接口")
 @RestController
 @RequestMapping("/provider")
+@Slf4j
 public class ServiceProviderController {
-
-    private static final Log log = LogFactory.getLog(ServiceProviderController.class);
 
     @Resource
     private DiscoveryClient discoveryClient;
