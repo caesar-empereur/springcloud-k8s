@@ -61,10 +61,6 @@ subprojects {
 
     dependencies {
         compile "org.springframework.boot:spring-boot-starter-web"
-        compile "org.springframework.boot:spring-boot-starter-actuator"
-        compile "org.springframework.boot:spring-boot-starter-logging"
-        compile "org.springframework.boot:spring-boot-starter-thymeleaf"
-        compile "org.springframework.boot:spring-boot-starter-actuator"
 
         compile "io.swagger:swagger-annotations:1.5.9"
         compile "io.swagger:swagger-models:1.5.9"
@@ -74,8 +70,6 @@ subprojects {
         annotationProcessor 'org.projectlombok:lombok:1.18.12'
         compileOnly 'org.projectlombok:lombok:1.18.12'
 
-        testCompile "junit:junit:4.11"
-        testCompile "org.mockito:mockito-all:1.10.19"
     }
 
 }
