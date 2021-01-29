@@ -1,1 +1,5 @@
 - springcloud 应用运行在 k8s 环境中，k8s 注册中心
+- 运行环境
+    - idea 2020.1 版本
+    - gradle 6.6 版本
+    - Jdk 1.8
