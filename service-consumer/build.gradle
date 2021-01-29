@@ -6,17 +6,16 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 jar {
-    baseName = 'service-provider'
+    baseName = 'service-consumer'
 }
 
 dependencies {
-
     compile "org.springframework.cloud:spring-cloud-starter"
     compile "org.springframework.cloud:spring-cloud-starter-openfeign"
     compile "org.springframework.cloud:spring-cloud-starter-netflix-hystrix"
     compile "org.springframework.cloud:spring-cloud-starter-netflix-ribbon"
-
     compile "org.springframework.cloud:spring-cloud-starter-kubernetes"
+
 }
 dependencyManagement {
     imports {

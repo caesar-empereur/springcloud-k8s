@@ -10,15 +10,14 @@ jar {
 }
 
 dependencies {
-
-    compile "org.springframework.boot:spring-boot-starter-data-jpa"
-    compile "mysql:mysql-connector-java:5.1.39"
-
     compile "org.springframework.cloud:spring-cloud-starter"
     compile "org.springframework.cloud:spring-cloud-starter-openfeign"
     compile "org.springframework.cloud:spring-cloud-starter-netflix-hystrix"
-
+    compile "org.springframework.cloud:spring-cloud-starter-netflix-ribbon"
     compile "org.springframework.cloud:spring-cloud-starter-kubernetes"
+
+    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+    compile "mysql:mysql-connector-java:5.1.39"
 }
 dependencyManagement {
     imports {
